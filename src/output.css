@@ -1097,11 +1097,6 @@ video {
   color: rgb(15 23 42 / var(--tw-text-opacity, 1));
 }
 
-.text-lime-600 {
-  --tw-text-opacity: 1;
-  color: rgb(101 163 13 / var(--tw-text-opacity, 1));
-}
-
 .text-pink-500 {
   --tw-text-opacity: 1;
   color: rgb(236 72 153 / var(--tw-text-opacity, 1));
@@ -1174,7 +1169,7 @@ video {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .navbar-fixed {
@@ -1270,7 +1265,7 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Batas Akhir Gallery */
+/* Batas Akhir Gallery */
 
 @keyframes pulse {
   50% {
@@ -1365,6 +1360,11 @@ body {
 .dark\:shadow-slate-500:is(.dark *) {
   --tw-shadow-color: #64748b;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.dark\:hover\:text-primary:hover:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(0 255 0 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 640px) {

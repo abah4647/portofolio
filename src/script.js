@@ -90,10 +90,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const toRotate = ["Denis Setiawan Pratama", "NPM : D1A240051"];
+  const toRotate = ["Denis Setiawan Pratama", "D1A240051" ];
   let index = 0;
   let textIndex = 0;
-  const rotate = document.getElementById("rotateTexts");
+  const rotateText = document.getElementById("rotateTexts");
   let isDeleting = false;
   const typingSpeed = 100;
   const deletingSpeed = 50;
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentText = toRotate[index];
 
     if (isDeleting) {
-      rotate.textContent = currentText.substring(0, textIndex--);
+      rotateText.textContent = currentText.substring(0, textIndex--);
       if (textIndex < 0) {
         isDeleting = false;
         index = (index + 1) % toRotate.length;
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(typeEffect, deletingSpeed);
       }
     } else {
-      rotate.textContent = currentText.substring(0, textIndex++);
+      rotateText.textContent = currentText.substring(0, textIndex++);
       if (textIndex > currentText.length) {
         isDeleting = true;
         setTimeout(typeEffect, delayBetweenWords);
